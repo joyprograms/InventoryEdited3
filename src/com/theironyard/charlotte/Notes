@@ -1,0 +1,20 @@
+requirements:
+
+[x]have a class with main
+[ ]have a method to store inventory items
+[ ]print inventory items
+[ ]list options
+
+have the following conditions
+[ ]if 1- create new item by entering its name
+[ ]if 2- remove item by entering number
+[ ]if 3- update quantity of item
+
+
+
+Figure out--
+
+how to input the integer and use what they type
+
+
+why is create item red- whats the static contet
