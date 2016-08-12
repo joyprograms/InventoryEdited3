@@ -9,9 +9,7 @@ public class Main {
 
         ArrayList<InventoryItem> item = new ArrayList<>();
 
-        System.out.println("Hey! Welcome to the BAGF inventory platform. Let's get started. We've got room for the following " +
-                "categories in your inventory list: " +
-                "Pen, Mug, Button, Notebook, and WallArt. Great selections!");
+            System.out.printf("Hey! Welcome to the BAGF inventory platform. Let's get started. We've got room for the following categories in your inventory list: Pen, Mug, Button, Notebook, and WallArt. Great selections! ");
 
         while (true) {
 
@@ -33,8 +31,7 @@ public class Main {
                 System.out.println("You want to remove an item, correct? If so, please type the item name i.e. 'life mug.'");
                 String unwanted = scanner.nextLine();
                 item.remove(unwanted);
-                System.out.println("Your item has been removed! Hope that wasn't an accident..." + "" +
-                        "If it was, we're sorry. Press the number after the integer that comes after 3 to make yourself feel better...");
+                System.out.printf("Your item has been removed! Hope that wasn't an accident...If it was, we're sorry. Press the number after the integer that comes after 3 to make yourself feel better...");
 
 
             }

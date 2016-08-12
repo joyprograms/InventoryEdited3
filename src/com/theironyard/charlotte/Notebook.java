@@ -6,5 +6,6 @@ package com.theironyard.charlotte;
 public class Notebook extends InventoryItem {
     public Notebook(String name, int numberInStock, String color) {
         super(name, numberInStock, color);
+
     }
 }
