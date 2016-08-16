@@ -7,36 +7,49 @@ import java.util.Scanner;
  */
 public class InventoryItem {
     String name;
-    String color;
-    int numberInStock;
     String category;
+    int numberInStock;
 
 
-    public InventoryItem(String name, int numberInStock, String color) {
+    public InventoryItem(String name, int numberInStock) {
         this.name = name;
         this.numberInStock = numberInStock;
-        this.color = color;
 
     }
 
-    public static InventoryItem createItem(String name, String color, String category, int numberInStock) throws Exception {
 
-        if (category.equalsIgnoreCase("Pen")) {
-            return new Pen(name, numberInStock, color);
+    public void setNumberInStock(int numberInStock) {
+        this.numberInStock = numberInStock;
+    }
+
+    public static InventoryItem createItem(String name, String category, int numberInStock) throws Exception {
+
+        if (category.equalsIgnoreCase("Button")) {
+            return new Button(name, numberInStock);
+
+        } else if (category.equalsIgnoreCase("Pen")) {
+            return new Pen(name, numberInStock);
+
         } else if (category.equalsIgnoreCase("Mug")) {
-            return new Mug(name, numberInStock, color);
-        } else if (category.equalsIgnoreCase("Button")) {
-            return new Button(name, numberInStock, color);
+            return new Mug(name, numberInStock);
+
         } else if (category.equalsIgnoreCase("Notebook")) {
-            return new Button(name, numberInStock, color);
+            return new Notebook(name, numberInStock);
+
         } else if (category.equalsIgnoreCase("WallArt")) {
-            return new Button(name, numberInStock, color);
+            return new WallArt(name, numberInStock);
         }
+
+
 
 //        throw new Exception("Sorry, homes. That's not a valid category in your inventory system.");
         System.err.println("Sorry, homes. That's not a valid category in your inventory system.");
         return null;
     }
+    //    Override toString()
 
-
+    @Override
+    public String toString() {
+        return String.format("[%d] %s, which is a: %s", this.numberInStock, this.name, this.category);
+    }
 }
