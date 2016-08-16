@@ -10,7 +10,7 @@ public class Main {
 
         ArrayList<InventoryItem> inventoryItems = new ArrayList<>();
 
-        System.out.println("Hey! Welcome to the BAGF inventory platform. Let's get started." + "We've got room for the following categories in your inventory list:" + "Pen, Mug, Button, Notebook, and WallArt. Great selections!");
+        System.out.println("Hey! Welcome to the Muller inventory platform. Let's get started." + "We've got room for the following categories in your inventory list:" + "Pen, Mug, Button, Notebook, and WallArt. Great selections!");
 
         while (true) {
 
